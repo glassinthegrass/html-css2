@@ -1,0 +1,97 @@
+/* * targets the entire html page and css sheet */
+
+* {
+    /* margin  */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 300vh;
+    background-color: rgba(64, 224, 208, 0.87);
+}
+
+.site-header {
+    top: 0px;
+    position: fixed; 
+    height: 10vh;
+    width: 100%;
+    background-color: darkolivegreen;
+    z-index: 1;
+}
+.site-logo {
+    position: relative;
+    height: 10vh;
+    top: 1vh;
+    /* left: 50%; */
+    /* right: -100px; */
+    z-index: 1;
+}
+
+.site-hero {
+    margin-top: 10vh;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('https://image.shutterstock.com/shutterstock/photos/769394425/display_1500/stock-vector-cartoon-mountain-and-valley-illustration-for-video-game-background-769394425.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+  background-size: cover;
+}
+
+.chat-icon {
+    width: 60px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1
+}
+.welcome-statement {
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(54, 97, 13, 0.3);
+    bottom: 50px;
+    /* left: 50px */
+    /* z-index: 1; */
+}
+.weather-message {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(216, 191, 216, 0.918);
+    position: sticky;
+    top: 10vh;
+    z-index: 1;
+}
+.items-item {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    border: 1px solid black;
+    /* display: inline-block; */
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.30);
+
+ }
+ .items-container {
+     width: 100%;
+     height: 1000px ;
+     background-color: gainsboro;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     /* in this example the alignment is alligned to the parent */
+     align-items: center;
+     flex-wrap: wrap;
+ }
+
+ .overflow-example {
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    border: 1px dotted black;
+    overflow: auto;
+ }
